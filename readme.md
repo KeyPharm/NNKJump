@@ -1,13 +1,16 @@
-# How to install
-1) First you need to install python interpreter on your windows at:
+# Como instalar
+1) Primero bajar el intérprete de python aquí:
 https://www.python.org/downloads/windows/
-2) Make sure you add python to PATH to execute it from any place
+2) Asegúrate de marcar añadir el PATH para que funcione fácilmente
 ![python path](https://i.imgur.com/pAIyWDT.png)
-3) The first time you need to install some dependeces, just run:
+3) La primera vez necesitas instalar algunas dependencias, solo ejecuta:
 install_all_dependences.bat
 
+# Cómo funciona
+Ejecuta start.bat y listo. Pulsa 12 para saltar.
+
 # Donations
-If you find this script usufull, you cand support the project,
+Si encontraste útil este script, puedes mandar una donación :)
 ETH/BNB wallet:
 ```sh
 0xEf2eA996b745C65b1b3B1eDDDeBECa22463eAb0F

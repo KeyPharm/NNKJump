@@ -18,7 +18,7 @@ import requests
 # save some space
 # save some space
 # respeta los espacios antes y después  del =. y siempre línea 20
-versioncontrol = "0.01"
+versioncontrol = "0.02"
 
 def update():
     raw = requests.get("https://raw.githubusercontent.com/KeyPharm/NNKJump/main/code/version.py").text
@@ -40,7 +40,7 @@ def getNewUpdate():
             target_dir = dir + "\\"
             z.extractall(dir)
             try:
-                # os.remove(source_dir + "\\" + "settings.yaml")
+                os.remove(source_dir + "\\" + "settings.yaml")
                 os.remove(source_dir + "\\" + "README.md")
                 os.remove(source_dir + "\\" + "README.md.txt")
             except OSError:

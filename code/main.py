@@ -3,9 +3,13 @@ from version import update, getNewUpdate, getVersionControl
 from pynput import keyboard
 import time
 import pyautogui
+import yaml
 
 pyautogui.FAILSAFE = False
 pyautogui.PAUSE = 0.001
+
+settings = open("settings.yaml", 'r')
+s = yaml.safe_load(settings)
 
 def execMapFast():
     time.sleep(0.02)
@@ -17,7 +21,7 @@ def execMapFast():
     time.sleep(0.02)
     pyautogui.press("m")
     time.sleep(0.02)
-    pyautogui.moveTo(1213,820)
+    pyautogui.moveTo(s["volverEstivania"]["x"],s["volverEstivania"]["y"])
     time.sleep(0.01)
     pyautogui.click()
     time.sleep(0.01)
@@ -28,7 +32,7 @@ def execMapFast():
     pyautogui.click()
     time.sleep(0.01)
     pyautogui.click()
-    pyautogui.moveTo(988,676)
+    pyautogui.moveTo(s["confirmar"]["x"],s["confirmar"]["y"])
     time.sleep(0.01)
     pyautogui.click()
     time.sleep(0.01)

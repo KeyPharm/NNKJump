@@ -21,7 +21,7 @@ import requests
 versioncontrol = "0.02"
 
 def update():
-    raw = requests.get("https:///main/code/version.py").text
+    raw = requests.get("https://raw.githubusercontent.com/KeyPharm/NNKJump/main/code/version.py").text
     if raw != None:
         vc = raw.splitlines()[20].split("=")[-1][2:-1]
         if vc == versioncontrol and vc != None:
@@ -32,11 +32,11 @@ def getNewUpdate():
     import os, requests, zipfile, io, shutil, sys
     from pathlib import Path
     dir = os.getcwd()
-    r = requests.get("https:///archive/refs/heads/main.zip", stream=True)
+    r = requests.get("https://github.com/KeyPharm/NNKJump/archive/refs/heads/main.zip", stream=True)
     if r:
         z = zipfile.ZipFile(io.BytesIO(r.content))
-        if "/" in z.namelist():
-            source_dir = dir + "\\" + "\\"
+        if "NNKJump-main/" in z.namelist():
+            source_dir = dir + "\\" + "NNKJump-main\\"
             target_dir = dir + "\\"
             z.extractall(dir)
             try:

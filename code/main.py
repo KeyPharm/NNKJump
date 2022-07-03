@@ -61,7 +61,7 @@ def on_press(key):
         # return False  # stop listener; remove this if want more keys
 
 def main():
-    print (f"Pulsa f12 para saltar. v{getVersionControl}")
+    print (f"Pulsa f12 para saltar. v{getVersionControl()}")
     listener = keyboard.Listener(on_press=on_press)
     listener.start()  # start to listen on a separate thread
     listener.join()

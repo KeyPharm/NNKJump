@@ -7,11 +7,11 @@ https://www.python.org/downloads/windows/
 install_all_dependences.bat
 
 # Cómo funciona
-1) Si juegas en 1920x1080 fullscreen, sencillamente:
+- Si juegas en 1920x1080 fullscreen, sencillamente:
 Ejecuta start.bat y listo. Pulsa 12 para saltar.
-2) Si juegas en cualquier otra resolución:
-  - Primero abrir para editar el archivo settings.yaml
-  - Reemplazar las líneas de las coordenadas del botón de ir a estivania, y confirmar por las tuyas:
+- Si juegas en cualquier otra resolución:
+  1) Primero abrir para editar el archivo settings.yaml
+  2) Reemplazar las líneas de las coordenadas del botón de ir a estivania, y confirmar por las tuyas:
   ```
   volverEstivania:
     x: 1213
